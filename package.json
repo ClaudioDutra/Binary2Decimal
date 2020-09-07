@@ -1,0 +1,12 @@
+{
+  "name": "binary2decimal",
+  "version": "1.0.0",
+  "description": "A simple appication that you input a binary number and application returns this in decimal format.",
+  "main": "index.js",
+  "author": "Claudio Bandeira Dutra",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.6.4",
+    "typescript": "^4.0.2"
+  }
+}
