@@ -38,7 +38,51 @@ header {
 
 header h1 {
     color: var(--color-text-title);
-    font-size: 4.4rem;
+    font-size: 5.4rem;
     font-family: 'Ubuntu', sans-serif;
     padding: 2.4rem 2rem;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text-primary);
+    font-size: 2rem;
+}
+
+main fieldset {
+    border: none;
+    padding: 4.4rem 0rem 1.2rem 0rem;
+}
+
+main fieldset label {
+    padding: 0rem 0rem 1rem 2rem;
+}
+
+main fieldset input {
+    background-color: var(--color-background-secondary);
+    color: var(--color-text-input);
+    border: none;
+    border-bottom: solid 0.5rem var(--color-text-primary);
+    height: 8rem;
+    width: 90%;
+    margin: 2rem 2rem 2rem 4rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4.4rem;
+}
+
+main div {
+    padding: 0rem 0rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main div #result {
+    color: var(--color-text-secondary);
+    font-family: 'Ubuntu', sans-serif;
+    align-self: center;
+    font-size: 10rem;
+}
+
+main div:last-child {
+    align-self: flex-end;
 }
