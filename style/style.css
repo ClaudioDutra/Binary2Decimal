@@ -24,6 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 header, main, footer {
@@ -47,6 +48,7 @@ main {
     font-family: 'Roboto', sans-serif;
     color: var(--color-text-primary);
     font-size: 2rem;
+    min-height: 60%;
 }
 
 main fieldset {
@@ -71,7 +73,7 @@ main fieldset input {
 }
 
 main div {
-    padding: 0rem 0rem 1rem 2rem;
+    padding: 0rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
 }
@@ -85,4 +87,11 @@ main div #result {
 
 main div:last-child {
     align-self: flex-end;
+}
+
+footer {
+    color: var(--color-text-footer);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    margin: 2rem 0rem;
 }
