@@ -22,34 +22,34 @@ body, html {
 body {
     background-color: var(--color-background-primary);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-header, main, footer {
+main {
     width: 100%;
     max-width: 700px;
     min-width: 300px;
+
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text-primary);
+    font-size: 2rem;
+    min-height: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
 }
 
-header {
+main header {
     background-color: var(--color-background-secondary);
 }
 
-header h1 {
+main header h1 {
     color: var(--color-text-title);
     font-size: 5.4rem;
     font-family: 'Ubuntu', sans-serif;
     padding: 2.4rem 2rem;
 }
 
-main {
-    font-family: 'Roboto', sans-serif;
-    color: var(--color-text-primary);
-    font-size: 2rem;
-    min-height: 60%;
-}
 
 main fieldset {
     border: none;
@@ -89,9 +89,45 @@ main div:last-child {
     align-self: flex-end;
 }
 
-footer {
+main footer {
     color: var(--color-text-footer);
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
     margin: 2rem 0rem;
+}
+
+@media(min-width: 1200px) {
+
+    main header {
+        grid-area: header;
+        padding: 4rem 2rem;
+    }
+    main fieldset {
+        grid-area: binary;
+        align-self: center;
+    }
+
+    main div {
+        grid-area: result;
+    }
+
+    main footer {
+        grid-area: footer;
+        margin-top: 5rem;
+    }
+
+    main {
+        max-width: 1200px;
+        margin-top: 6rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header binary"
+            "result result"
+            "footer .";
+        justify-content: space-between;
+        align-content: space-around;
+    }
+
 }
